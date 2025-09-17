@@ -6,6 +6,40 @@
     <title>Alunos Cadastrados</title>
 </head>
 <body>
-    
+    <div>
+          <h6>Cadastro de Alunos</h6>
+
+          <table>
+            <tr>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>Email</th>
+              <th>Data de Nascimento</th>
+              <th>Curso</th>
+              <th>Ações</th>
+            </tr>
+            <!--abrir o for-->
+            {% for aluno in alunos %}
+              <tr>
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.sobrenome }}</td>
+                <td>{{ aluno.email }}</td>
+                <td>{{ aluno.data_nascimento }}</td>
+                <td>{{ aluno.curso }}</td>
+                <td>
+                  <!-- aqui ações de edição e exclusão -->
+                </td>
+              </tr>
+            {% empty %}
+            </table>
+            <tr>
+              <td>Nenhum aluno cadastrado.</td>
+            </tr>
+            <!--fechar o for-->
+            {% endfor %}
+        </div>
+    </div>
+      {% csrf_token %}
+    <p><a href="{% url 'index' %}">Voltar ao início</a></p>
 </body>
 </html>
