@@ -30,3 +30,6 @@ O software permite registrar e consultar dados de alunos.
 
  **Instituição**  
 > Instituto Federal Catarinense - Campus Fraiburgo - Análise e Desenvolvimento de Sistemas - 4ª Fase
+
+**Rascunho de Pesquisa**
+>[ Como foi feito.](https://docs.google.com/document/d/1ihGv8XvaPP0CaRQ2gFl_Ep5zg0l4lZk3Lj9R6oY6kxo/edit?tab=t.0)
